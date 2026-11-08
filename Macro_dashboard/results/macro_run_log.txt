@@ -1,0 +1,27 @@
+
+======================================================================
+FACT SHEET (copy these into your one-page view; the interpretation is yours)
+======================================================================
+  ECB deposit rate                    2.50%  as of 2026-11-08  (1y ago 2.00, change +0.50)
+  Euro area 2y yield                  2.96%  as of 2026-11-08  (1y ago 1.97, change +0.99)
+  Euro area 10y yield                 3.29%  as of 2026-11-08  (1y ago 2.75, change +0.54)
+  Euro area 2s10s slope               0.34%  as of 2026-11-08  (1y ago 0.78, change -0.44)
+  Fed funds upper bound               4.00%  as of 2026-11-08  (1y ago 4.00, change +0.00)
+  US 2y yield                         4.46%  as of 2026-11-08  (1y ago 3.55, change +0.91)
+  US 10y yield                        4.84%  as of 2026-11-08  (1y ago 4.11, change +0.73)
+  US 2s10s slope                      0.38%  as of 2026-11-08  (1y ago 0.56, change -0.18)
+  US 10y minus euro area 10y          1.55%  as of 2026-11-08  (1y ago 1.36, change +0.19)
+  Euro area HICP y/y                  4.00%  as of 2026-10-31  (1y ago 2.10, change +1.90)
+  Euro area HICP ex energy/food y/y   2.50%  as of 2026-10-31  (1y ago 2.40, change +0.10)
+  US CPI y/y                          3.72%  as of 2026-09-30  (1y ago 3.02, change +0.69)
+  US core CPI y/y                     2.57%  as of 2026-09-30  (1y ago 3.02, change -0.45)
+  Euro area real policy rate (DFR - HICP) -1.50%  (negative = policy still loose vs inflation)
+  2y yield minus deposit rate         0.46%  (positive = market pricing hikes; negative = cuts)
+  Share of days since 2015 with an inverted euro area 2s10s: 15%
+
+Questions your view must answer: (1) Is the curve pricing hikes or cuts, and is inflation justifying that?
+(2) Core vs headline: is the pressure broad? (3) Euro vs US: why the 10y gap, and what would close it?
+(4) What single data release would change your mind?
+
+Saved macro_data.csv
+Saved macro_dashboard.png
