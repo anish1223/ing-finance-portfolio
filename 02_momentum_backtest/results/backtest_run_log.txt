@@ -1,0 +1,40 @@
+==============================================================================
+Data: 2007-06-30 to 2026-11-30 (raw prices through 2026-11-06)   |   real data
+Universe: SPY, EFA, EEM, IWM, TLT, IEF, LQD, HYG, GLD, DBC, VNQ   Cash: SHY   Cost: 10 bps one-way
+Parameter combinations tried (this is your 'number of trials'): 16
+==============================================================================
+
+[1] Fixed split. In-sample (to 2016-12-31) best params: lookback=12m, top_k=5 (Sharpe 0.46)
+    The honest number is the out-of-sample one. Expect it to be worse than in-sample.
+
+[2] Walk-forward parameter choices (year: lookback, top_k):
+    2012: 6m/2, 2013: 6m/2, 2014: 12m/3, 2015: 12m/3, 2016: 12m/4, 2017: 12m/5, 2018: 12m/5, 2019: 12m/5, 2020: 12m/5, 2021: 12m/5, 2022: 3m/4, 2023: 9m/5, 2024: 12m/5, 2025: 9m/5, 2026: 9m/5
+
+[3] Performance (net of costs)
+
+                                         CAGR     Vol Sharpe Sortino   MaxDD Calmar  Months
+Strategy: in-sample (fixed split)        4.6%   11.1%   0.46    0.62  -18.0%   0.26     114
+Strategy: out-of-sample (fixed split)    8.1%   10.1%   0.82    1.30  -15.7%   0.52     119
+Strategy: walk-forward (all OOS)         6.8%   10.3%   0.70    1.14  -15.6%   0.44     179
+SPY buy&hold (same window)              14.5%   13.9%   1.05    1.53  -23.9%   0.61     179
+Equal-weight universe (same window)      6.3%    9.0%   0.72    1.02  -19.5%   0.32     179
+
+    Walk-forward annual turnover: 5.4x   Cost drag: ~0.54% a year
+
+[4] Walk-forward Sharpe minus SPY Sharpe: -0.35  (90% bootstrap interval -0.67 to -0.02)
+    interval below zero: the strategy underperformed the benchmark.
+    You tried 16 parameter sets, so even a 'good' in-sample Sharpe is inflated by selection.
+
+[5] Full-sample Sharpe by parameter pair (look for a smooth plateau, not one lucky spike):
+     top2  top3  top4  top5
+3m   0.30  0.53  0.61  0.59
+6m   0.48  0.50  0.58  0.58
+9m   0.35  0.52  0.63  0.67
+12m  0.41  0.59  0.60  0.64
+
+[6] Cost sensitivity (in-sample-chosen params, whole sample):
+      0 bps: CAGR 6.8%, Sharpe 0.68
+      5 bps: CAGR 6.6%, Sharpe 0.66
+     10 bps: CAGR 6.4%, Sharpe 0.64
+     25 bps: CAGR 5.8%, Sharpe 0.59
+     50 bps: CAGR 4.8%, Sharpe 0.50
